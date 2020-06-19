@@ -17,6 +17,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         setTextField(textField: bottomTextField, text: "BOTTOM")
         self.subscribeToKeyboardNotifications()
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
+        //setTabBar(isHidden: true)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,7 +62,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
 
     @objc func keyboardWillShow(_ notification: Notification){
-        if bottomTextField.isEditing {
+        if bottomTextField.isFirstResponder {
             view.frame.origin.y = 0 - getKeyboardHeight(notification)
         }// end of if
     }
@@ -159,5 +161,9 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         .font: UIFont(name: "impact", size: 40)!,
         .strokeWidth: -4.0
     ]
+    
+    func setTabBar(isHidden: Bool){
+           self.tabBarController?.tabBar.isHidden = isHidden
+       }
   
 }

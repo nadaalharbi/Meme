@@ -119,10 +119,8 @@
 				113A92732483206A00A9DDFF /* MemeCollectionViewController.swift */,
 				113A927724832C7000A9DDFF /* MemeCollectionViewCell.swift */,
 				113A927A24833A7000A9DDFF /* MemeDetailViewController.swift */,
-				114645162463498A0010A698 /* Main.storyboard */,
+				1147CB5B249D28B500CC2033 /* Container */,
 				11F28934247CCC47002696AC /* Meme.swift */,
-				11464519246349910010A698 /* Assets.xcassets */,
-				1146451B246349910010A698 /* LaunchScreen.storyboard */,
 				1146451E246349910010A698 /* Info.plist */,
 			);
 			path = Meme;
@@ -144,6 +142,16 @@
 				11464534246349910010A698 /* Info.plist */,
 			);
 			path = MemeUITests;
+			sourceTree = "<group>";
+		};
+		1147CB5B249D28B500CC2033 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				114645162463498A0010A698 /* Main.storyboard */,
+				11464519246349910010A698 /* Assets.xcassets */,
+				1146451B246349910010A698 /* LaunchScreen.storyboard */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 		11CCA61D2489F91100981057 /* fonts */ = {
